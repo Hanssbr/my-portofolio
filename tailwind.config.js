@@ -9,6 +9,10 @@ module.exports = {
       },
       top: {
         '120': '28rem',
+        '140': '34rem',
+      },
+      right: {
+        '120': '20rem'
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
