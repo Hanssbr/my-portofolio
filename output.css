@@ -598,16 +598,16 @@ video {
   z-index: 50;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .mb-96 {
   margin-bottom: 24rem;
 }
 
 .ml-32 {
   margin-left: 8rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .mr-32 {
@@ -660,10 +660,6 @@ video {
 
 .border-4 {
   border-width: 4px;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-double {
@@ -719,6 +715,10 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -739,12 +739,30 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-black {
@@ -778,36 +796,16 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .hover\:h-28:hover {
   height: 7rem;
 }
 
-.hover\:w-3:hover {
-  width: 0.75rem;
-}
-
-.hover\:w-2:hover {
-  width: 0.5rem;
-}
-
 .hover\:w-28:hover {
   width: 7rem;
-}
-
-.hover\:border:hover {
-  border-width: 1px;
 }
 
 .hover\:border-lime-400:hover {
@@ -815,7 +813,12 @@ video {
   border-color: rgb(163 230 53 / var(--tw-border-opacity));
 }
 
-.hover\:text-slate-600:hover {
+.hover\:bg-custom-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 25 / var(--tw-bg-opacity));
+}
+
+.hover\:text-lime-400:hover {
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
+  color: rgb(163 230 53 / var(--tw-text-opacity));
 }

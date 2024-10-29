@@ -10,6 +10,9 @@ module.exports = {
       top: {
         '120': '28rem',
       },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      },
     },
   },
   plugins: [],
