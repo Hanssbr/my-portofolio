@@ -9,11 +9,14 @@ module.exports = {
         "custom-pink": "#FFCCEA",
       },
       top: {
-        120: "28rem",
-        121: "34rem",
+        "120": "28rem",
+        "121": "34rem",
       },
       right: {
-        122: "27rem",
+        "122": "27rem",
+      },
+      left: {
+        "127": "28rem"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
