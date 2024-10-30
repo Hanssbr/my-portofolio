@@ -9,8 +9,8 @@
   <body class="bg-custom-black">
     <header>
       <nav class="flex space justify-between items-center p-5">
-        <div class="logo font-poppins text-3xl ml-32 text-lime-400">Hanssu</div>
-        <div class="link mr-32">
+        <div class="logo font-poppins text-3xl ml-10 md:ml-20 text-lime-400">Hanssu</div>
+        <div class="link mr-7 lg:mr-20 hidden md:flex">
           <a href="#" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded mr-4 hover:bg-custom-black duration-200">About</a>
           <a href="#" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded mr-4 hover:bg-custom-black duration-200">Project</a>
           <a href="#" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded hover:bg-custom-black duration-200">Contact</a>
@@ -47,16 +47,37 @@
         <div class="card flex justify-around">
           <div class="about-card h-[30rem] w-72 bg-gray-600 shadow-xl shadow-gray-500 rounded-xl max-w-sm">
             <img src="priscilla-du-preez-OEdkPaxYMXU-unsplash.jpg" alt="project" class="bg-cover rounded-t-xl">
-            <p class="inline-block bg-lime-400 rounded-md px-4 py-1 mt-3 font-poppins font-semibold ml-3">Project</p>
-            <p class="text-white ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit debitis eum delectus repudiandae, corporis animi repellat est natus ducimus ab?</p>
+            <p class="inline-block bg-yellow-400 rounded-md px-4 py-1 mt-3 font-poppins font-semibold ml-3">Project</p>
+            <p class="text-white px-4 py-3 font-poppins">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit debitis eum delectus repudiandae, corporis animi repellat est natus ducimus ab?</p>
+            <button class="bg-lime-400 border-4 border-lime-400 rounded-md border-double px-3 ml-3 mt-4 hover:bg-gray-600 hover:text-white font-semibold font-poppins duration-200">See More Info...</button>
           </div>
           <div class="about-card h-[30rem] w-72 bg-gray-600 shadow-xl shadow-gray-500 rounded-xl">
             <img src="markus-winkler-4TBdESUNuFg-unsplash.jpg" alt="cv" class="bg-cover rounded-t-xl">
-            <p class="inline-block bg-lime-400 rounded-md px-4 py-1 mt-3 font-poppins font-semibold ml-3">Curriculum Vitae</p>
+            <p class="inline-block bg-yellow-400 rounded-md px-4 py-1 mt-3 font-poppins font-semibold ml-3">Curriculum Vitae</p>
+            <p class="text-white px-4 py-3 font-poppins">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit debitis eum delectus repudiandae, corporis animi repellat est natus ducimus ab?</p>
+            <button class="bg-lime-400 border-4 border-lime-400 rounded-md border-double px-3 ml-3 mt-4 hover:bg-gray-600 hover:text-white font-semibold font-poppins duration-200">See More Info...</button>
           </div>
         </div>
       </div>
-      <br><br><br><br><br><br>
+    </section>
+    <section class="contact">
+      <div class="title-contact">
+        <h1 class="text-5xl text-yellow-400 font-bold mt-80 ml-10 font-poppins inline-block">Contact Me</h1>
+        <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[110rem] left-[0rem]"></div>
+        <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[112rem] right-[74rem]"></div>
+      </div>
+      <form-contact>
+        <form action="#" method="post" class="bg-gray-600 w-[30rem] shadow-xl shadow-gray-500 rounded-xl h-[40rem] ml-10">
+          <label for="name" class="text-lime-400 font-medium text-2xl block pt-7 pl-5">Name</label>
+          <input type="text" id="name" name="name" placeholder="Masukkan Nama" required class="mt-1 w-96 text-white ml-5 bg-transparent border-0 placeholder-gray-400 border-b-2 border-white focus:outline-none focus:border-lime-500 mb-3">
+          <label for="name" class="text-lime-400 font-medium text-2xl block pt-7 pl-5">No.Telp</label>
+          <input type="text" id="name" name="name" placeholder="Masukkan Nomer Telepon" required class="mt-1 w-96 text-white ml-5 bg-transparent border-0 placeholder-gray-400 border-b-2 border-white focus:outline-none focus:border-lime-500">
+          <label for="name" class="text-lime-400 font-medium text-2xl block pt-7 pl-5">Email</label>
+          <input type="text" id="name" name="name" placeholder="Masukkan Email" required class="mt-1 w-96 text-white ml-5 bg-transparent border-0 placeholder-gray-400 border-b-2 border-white focus:outline-none focus:border-lime-500">
+          <label for="name" class="text-lime-400 font-medium text-2xl block pt-7 pl-5">Kirim Pesan</label>
+          <textarea name="pesan" id="pesan" class="mt-1 w-96 text-white ml-5 bg-transparent border-0 placeholder-gray-400 border-b-2 border-white focus:outline-none focus:border-lime-500">Message</textarea>
+        </form>
+      </form-contact>
     </section>
   </body>
 </html>
