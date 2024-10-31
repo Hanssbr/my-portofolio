@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
@@ -11,9 +11,9 @@
       <nav class="flex space justify-between items-center p-5">
         <div class="logo font-poppins text-3xl ml-10 md:ml-20 text-lime-400">Hanssu</div>
         <div class="link mr-7 lg:mr-20 hidden md:flex">
-          <a href="#" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded mr-4 hover:bg-custom-black duration-200">About</a>
-          <a href="#" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded mr-4 hover:bg-custom-black duration-200">Project</a>
-          <a href="#" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded hover:bg-custom-black duration-200">Contact</a>
+          <a href="#about" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded mr-4 hover:bg-custom-black duration-200">About</a>
+          <a href="#about" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded mr-4 hover:bg-custom-black duration-200">Project</a>
+          <a href="#contact" class="text-lg font-poppins font-semibold text-black hover:text-lime-400 bg-lime-400 inline-block w-20 text-center rounded hover:bg-custom-black duration-200">Contact</a>
         </div>
       </nav>
     </header>
@@ -36,7 +36,7 @@
         <div class="decoration w-32 h-32 border-4 border-yellow-400 border-double absolute top-96 left-80 rounded hover:border-lime-400 hover:w-28 hover:h-28 transition-all duration-200"></div>
         <div class="decoration w-32 h-32 border-4 border-yellow-400 border-double absolute top-120 left-64 rounded hover:border-lime-400 hover:w-28 hover:h-28 transition-all duration-200"></div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-header">        
         <h1 class="text-5xl text-yellow-400 font-bold mt-24 ml-10 font-poppins inline-block">About Me</h1>
         <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[57rem] left-[0rem]"></div>
@@ -47,7 +47,7 @@
         <div class="card flex justify-around">
           <div class="about-card h-[30rem] w-72 bg-gray-600 shadow-xl shadow-gray-500 rounded-xl max-w-sm">
             <img src="priscilla-du-preez-OEdkPaxYMXU-unsplash.jpg" alt="project" class="bg-cover rounded-t-xl">
-            <p class="inline-block bg-yellow-400 rounded-md px-4 py-1 mt-3 font-poppins font-semibold ml-3">Project</p>
+            <p class="inline-block bg-yellow-400 rounded-md px-4 py-1 mt-3 font-poppins font-semibold ml-3" id="project">Project</p>
             <p class="text-white px-4 py-3 font-poppins">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit debitis eum delectus repudiandae, corporis animi repellat est natus ducimus ab?</p>
             <button class="bg-lime-400 border-4 border-lime-400 rounded-md border-double px-3 ml-3 mt-4 hover:bg-gray-600 hover:text-white font-semibold font-poppins duration-200">See More Info...</button>
           </div>
@@ -63,7 +63,7 @@
     <section class="contact-location">
       <div class="title-contact">
         <h1 class="text-5xl text-yellow-400 font-bold mt-80 ml-10 font-poppins inline-block">Contact Me</h1>
-        <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[110rem] left-[0rem]"></div>
+        <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[110rem] left-[0rem]" id="contact"></div>
         <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[112rem] right-[74rem]"></div>
       </div>
       <div class="form-location grid grid-cols-2">
@@ -78,7 +78,7 @@
             <label for="name" class="text-lime-400 font-medium text-2xl block pt-7 pl-5">Kirim Pesan</label>
             <textarea name="pesan" id="pesan" class="resize-none h-24 mt-1 w-96 text-white block ml-5 bg-transparent border-0 placeholder-gray-400 border-b-2 border-white focus:outline-none focus:border-lime-500"></textarea>
             <div class="button flex justify-center items-center">
-              <button class="bg-lime-400 border-4 w-3/4 border-lime-400 rounded-md border-double py-2 ml-3 mt-7 hover:bg-gray-600 hover:text-white font-semibold font-poppins duration-200">Send</button>
+              <button class="bg-lime-400 border-4 w-3/4 border-lime-400 rounded-md border-double py-2 ml-3 mt-7 hover:bg-gray-600 hover:text-white font-semibold font-poppins duration-200" >Send</button>
             </div>
           </form>
         </form-contact>
@@ -86,7 +86,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32659.731261727262!2d107.03980509986853!3d-6.527204589754747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bd27c6b9b645%3A0x600dcb86d7b2feb3!2sPoliteknik%20IDN!5e0!3m2!1sid!2sid!4v1730369259810!5m2!1sid!2sid" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-10 border-4 border-solid border-yellow-400 rounded-xl"></iframe>
         <h1 class="text-5xl text-yellow-400 font-bold mt-20 font-poppins inline-block">My Collage Location</h1>
         <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[148rem] right-[17rem]"></div>
-        <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[151rem] right-[46rem]"></div>
+        <div class="oval rounded-full w-16 h-16 border-lime-400 border-double border-4 absolute top-[151rem] right-[45rem]"></div>
         </div>
       </div>
       <br><br><br><br><br>
